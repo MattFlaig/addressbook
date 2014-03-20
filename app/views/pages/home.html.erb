@@ -1,0 +1,9 @@
+<div class="center hero-unit">
+  <% @title = "root" %>
+  <h1>Organize your contacts!</h1>
+  <h2>Please register below to get started </h2>
+
+  <% unless logged_in? %>
+    <%= link_to "Register", new_user_path, class: "btn btn-large btn-primary" %>
+  <% end %>
+</div>

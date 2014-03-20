@@ -1,0 +1,45 @@
+<%= form_for @contact do |f| %>
+  <% if @contact.errors.any? %>
+    <% flash[:danger] = "There were some errors!" %>
+    <ul>
+      <% @contact.errors.full_messages.each do |msg| %>
+    	  <li><%=  msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</br>
+
+<fieldset>
+  <div class="control-group">
+  <%= f.label :name %>
+    <div class="controls">
+      <%= f.text_field :name %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :email %>
+    <div class="controls">
+      <%= f.text_field :email %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :phonenumber %>
+    <div class="controls">
+      <%= f.text_field :phonenumber %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :city %>
+    <div class="controls">
+      <%= f.text_field :city %>
+    </div>
+  </div>
+  </br>
+  <div>
+  	<%= f.submit class: "btn btn-large btn-success" %>
+    <div class="float" >
+      <%= back_to_contact_list %>
+    </div>
+</div>
+</fieldset>
+<% end %>

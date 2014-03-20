@@ -1,0 +1,148 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+@import "bootstrap";
+
+
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+  background-color: #000;
+  color: white;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+ /* text-align: center; */
+ background-color: #09405c;
+ 
+}
+
+.center h1, h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.center a{
+  color: #fff;
+}
+
+.float {
+  float: left; 
+  margin-right: 20px;
+}
+
+.float a {
+  color:#fff; 
+  text-decoration: none;
+}
+
+.float a:hover {
+  color:#fff;
+}
+
+.btn{
+  color:#fff;
+}
+
+#search-button {
+  color:#fff;
+}
+
+
+
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  /* text-align: center; */
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  /* text-align: center; */
+  font-weight: normal;
+  color: #999;
+}
+
+.grey {
+  color: #999;
+}
+ 
+
+
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #999;
+  text-decoration: none;
+}
+
+.navbar-custom {
+background-color: #09405c;
+  border-color: #062b3e;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#0e608a), to(#09405c));
+  background-image: -webkit-linear-gradient(top, #0e608a, 0%, #09405c, 100%);
+  background-image: -moz-linear-gradient(top, #0e608a 0%, #09405c 100%);
+  background-image: linear-gradient(to bottom, #0e608a 0%, #09405c 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0e608a', endColorstr='#ff09405c', GradientType=0);
+}
+
+.navbar-custom .nav > li > a {
+  color: #fff;
+  border-left: 1px solid #062b3e;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.navbar-custom navbar-nav  > a,
+.navbar-custom .nav > li > a:hover,
+.navbar-custom .nav > li > a:focus{
+  color: #999;
+  background-color: #062b3e;
+}
+
+.navbar-custom .nav > li > a:hover,
+.navbar-custom .nav > li > a:focus {
+  color: #999999;
+  background-color: transparent;
+}

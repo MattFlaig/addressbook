@@ -1,0 +1,18 @@
+<div class="center hero-unit">
+	<% @title = "index" %>
+  <h1> Your contacts</h1>
+  <h2>Welcome, <%= current_user.username %>!</h2>
+  
+    <% @contacts.each do |contact| %>
+    <ul class="list-group">
+      <% if logged_in? %>
+      <li class="list-group-item">
+      	<%= link_to contact.name, contact_path(contact) %>
+        <small><%= link_to "(Edit)", edit_contact_path(contact) %></small>
+        <small><%= link_to "(Delete)", contact, confirm: 'Do you really want to delete this contact?', method: :delete %></small>
+      </li>
+      <% end %>
+    </ul>
+    <% end %>
+  </br>
+</div>

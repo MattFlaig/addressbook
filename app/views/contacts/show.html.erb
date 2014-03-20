@@ -1,0 +1,34 @@
+<% @title = "Contact Details" %>
+<div class= "center hero-unit">
+<h1>Details of <%= @contact.name %></h1>
+</br>
+<p>
+	<strong class= "grey">Name: </strong>
+	<small><%= @contact.name %></small>
+</p>
+<p>
+	<strong class= "grey">Email: </strong>
+	<small><%= @contact.email %></small>
+</p>
+<p>
+	<strong class= "grey">Phone Number: </strong>
+	<small><%= @contact.phonenumber %></small>
+</p>
+<p>
+	<strong class= "grey">City: </strong>
+	<small><%= @contact.city %></small>
+</p>
+<p>
+	<strong class= "grey">Created at: </strong>
+	<small><%= @contact.created_at %></small>
+</p>
+<p>
+	<strong class= "grey">Updated at: </strong>
+	<small><%= @contact.updated_at %>
+</p>
+</br>
+<div class="float" >
+  <%= back_to_contact_list %>
+</div>
+</br>
+</div>

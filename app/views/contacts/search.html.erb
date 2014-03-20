@@ -1,0 +1,17 @@
+<% @title = "search" %>
+<div class= "center hero-unit">
+  <h2>Your search results:</h2>
+
+  <% @results.each do |contact|%>
+  <ul>
+
+  	<%# if @contact.name %> 
+  	<li>
+      <%=  link_to contact.name, contact_path(contact) %>
+    </li>
+    
+    <%# end %>
+  </ul>
+  <% end %>
+
+</div>
